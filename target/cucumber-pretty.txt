@@ -1,0 +1,8 @@
+
+Scenario: the Authorized user can Add and Remove a book. # src/test/resources/functionalTests/End2End_Test.feature:8
+  Given I am an authorized user                          # stepDefinitions.Steps.iAmAnAuthorizedUser()
+  Given A list of books are available                    # stepDefinitions.Steps.listOfBooksAreAvailable()
+  When I add a book to my reading list                   # stepDefinitions.Steps.addBookInList()
+  Then The book is added                                 # stepDefinitions.Steps.bookIsAdded()
+  When I remove a book from my reading list              # stepDefinitions.Steps.removeBookFromList()
+  Then the book is removed                               # stepDefinitions.Steps.bookIsRemoved()

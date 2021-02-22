@@ -1,0 +1,110 @@
+[
+  {
+    "source": "I am an authorized user",
+    "steps": [
+      {
+        "name": "I am an authorized user",
+        "aggregatedDurations": {
+          "median": 2.2150453,
+          "average": 2.2150453
+        },
+        "durations": [
+          {
+            "duration": 2.2150453,
+            "location": "file:///D:/Users/rupesh10934/eclipse-workspace/BRITestingFramework/src/test/resources/functionalTests/End2End_Test.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "A list of books are available",
+    "steps": [
+      {
+        "name": "A list of books are available",
+        "aggregatedDurations": {
+          "median": 0.5718977,
+          "average": 0.5718977
+        },
+        "durations": [
+          {
+            "duration": 0.5718977,
+            "location": "file:///D:/Users/rupesh10934/eclipse-workspace/BRITestingFramework/src/test/resources/functionalTests/End2End_Test.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I add a book to my reading list",
+    "steps": [
+      {
+        "name": "I add a book to my reading list",
+        "aggregatedDurations": {
+          "median": 0.5200011,
+          "average": 0.5200011
+        },
+        "durations": [
+          {
+            "duration": 0.5200011,
+            "location": "file:///D:/Users/rupesh10934/eclipse-workspace/BRITestingFramework/src/test/resources/functionalTests/End2End_Test.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "The book is added",
+    "steps": [
+      {
+        "name": "The book is added",
+        "aggregatedDurations": {
+          "median": 0.0010288,
+          "average": 0.0010288
+        },
+        "durations": [
+          {
+            "duration": 0.0010288,
+            "location": "file:///D:/Users/rupesh10934/eclipse-workspace/BRITestingFramework/src/test/resources/functionalTests/End2End_Test.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I remove a book from my reading list",
+    "steps": [
+      {
+        "name": "I remove a book from my reading list",
+        "aggregatedDurations": {
+          "median": 0.5191908,
+          "average": 0.5191908
+        },
+        "durations": [
+          {
+            "duration": 0.5191908,
+            "location": "file:///D:/Users/rupesh10934/eclipse-workspace/BRITestingFramework/src/test/resources/functionalTests/End2End_Test.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "the book is removed",
+    "steps": [
+      {
+        "name": "the book is removed",
+        "aggregatedDurations": {
+          "median": 0.5110572,
+          "average": 0.5110572
+        },
+        "durations": [
+          {
+            "duration": 0.5110572,
+            "location": "file:///D:/Users/rupesh10934/eclipse-workspace/BRITestingFramework/src/test/resources/functionalTests/End2End_Test.feature:13"
+          }
+        ]
+      }
+    ]
+  }
+]
