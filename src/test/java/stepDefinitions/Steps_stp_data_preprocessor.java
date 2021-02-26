@@ -1,9 +1,17 @@
 package stepDefinitions;
 
+import java.util.List;
+import java.util.Map;
+
+import org.junit.Assert;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
 
 public class Steps_stp_data_preprocessor {
 	
@@ -30,14 +38,26 @@ public class Steps_stp_data_preprocessor {
 	@When("I make request to access")
 	public void i_make_request_to_access() {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    //throw new io.cucumber.java.PendingException();
+		
+		System.out.println("I am in when section");
 	}
 
 
 	@Then("I expect response")
 	public void i_expect_response() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		RestAssured.baseURI = BASE_URL;
+		RequestSpecification request = RestAssured.given();
+		Response response = request.get("/data-preprocessor/STP");
+
+		String jsonString = response.asString();
+		
+		List<Map<String, String>> id = JsonPath.from(jsonString).get("id");
+		Assert.assertTrue(id.size() > 0);
+
+		String value_Id = id.get(0).get("id");	   
+		
+		System.out.print(value_Id);
 	}
 
 
