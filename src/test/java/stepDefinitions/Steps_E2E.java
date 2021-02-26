@@ -13,7 +13,7 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class Steps {
+public class Steps_E2E {
 	private static final String USER_ID = "08f47d83-42ff-415e-b99c-1ac714ba08bf";
 	private static final String USERNAME = "britest06";
 	private static final String PASSWORD = "Britest@06";

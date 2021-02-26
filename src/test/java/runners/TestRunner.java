@@ -14,6 +14,7 @@ import io.cucumber.junit.CucumberOptions;
 					,monochrome = true
 					,publish = true
 					,snippets = io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE
+					,tags = "SampleTest"
 					
 					)
 
