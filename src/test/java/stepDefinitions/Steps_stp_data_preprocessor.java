@@ -1,5 +1,7 @@
 package stepDefinitions;
 
+import static org.testng.Assert.assertEquals;
+
 import java.util.List;
 import java.util.Map;
 
@@ -50,13 +52,15 @@ public class Steps_stp_data_preprocessor {
 		RequestSpecification request = RestAssured.given();
 		Response response = request.get("/data-preprocessor/STP");
 
-		String jsonString = response.asString();
+		String jsonString = response.prettyPrint();
 		
-		List<Map<String, String>> id = JsonPath.from(jsonString).get("id");
-		Assert.assertTrue(id.size() > 0);
+		List<Map<String, String>> entityList = JsonPath.from(jsonString).get("entityList");
+		Assert.assertTrue(entityList.size() > 0);
 
-		String value_Id = id.get(0).get("id");	   
+		String value_Id = entityList.get(0).get("entityId");	
 		
-		System.out.print(value_Id);
+		assertEquals(value_Id, "792676");
+		
+		//System.out.print(value_Id);
 	}
 }
