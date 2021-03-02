@@ -38,7 +38,7 @@ public class Steps_E2E {
 		String jsonString = response.asString();
 		token = JsonPath.from(jsonString).get("token");
 		
-		System.out.print("Token - " + token + " Token End");
+		//System.out.print("Token - " + token + " Token End");
 
 	}
 

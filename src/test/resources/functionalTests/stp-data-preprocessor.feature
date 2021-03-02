@@ -7,5 +7,5 @@ Feature: To Test GET API call to the endpoint https://bir-master-bir-stp-data-pr
 
   Scenario: The Genuine and valid user can get access data source STP on S3 
     Given A valid endpoint is available 
-    When I make request to access
-    Then I expect response
+    When User make request to access
+    Then User expect response

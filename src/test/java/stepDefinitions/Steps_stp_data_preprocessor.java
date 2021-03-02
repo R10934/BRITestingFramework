@@ -22,6 +22,8 @@ public class Steps_stp_data_preprocessor {
 	private static final String PASSWORD = "";
 	private static final String BASE_URL = "https://bir-master-bir-stp-data-preprocessor.k8s-nonprod.texasplatform.uk";
 	
+	String response01 = "";
+	
 	@Given("A valid endpoint is available")
 	public void a_valid_endpoint_is_available() {
 	    
@@ -31,35 +33,60 @@ public class Steps_stp_data_preprocessor {
 				   .get("/data-preprocessor/STP")
 				   .then()
 				   .statusCode(200)
-				   ;
-		
-		
+				   ;		
 	}
 
 
 	@When("I make request to access")
 	public void i_make_request_to_access() {
-	    // Write code here that turns the phrase above into concrete actions
-	    //throw new io.cucumber.java.PendingException();
+		RestAssured.baseURI = BASE_URL;
+		RequestSpecification request = RestAssured.given();
+		Response response = request.get("/data-preprocessor/STP");
 		
-		System.out.println("I am in when section");
+		response01 = response.asString();
+		
+		Assert.assertEquals(200, response.getStatusCode());
 	}
 
 
 	@Then("I expect response")
 	public void i_expect_response() {
-		RestAssured.baseURI = BASE_URL;
-		RequestSpecification request = RestAssured.given();
-		Response response = request.get("/data-preprocessor/STP");
-
-		String jsonString = response.prettyPrint();
 		
-		List<Map<String, String>> entityList = JsonPath.from(jsonString).get("entityList");
+
+		List<Map<String, String>> entityList = JsonPath.from(response01).get("entityList");
+		Assert.assertTrue(entityList.size() > 0);
+		
+		List<Map<String, String>> singleOrgList = JsonPath.from(response01).get("singleOrgList");
 		Assert.assertTrue(entityList.size() > 0);
 
-		String value_Id = entityList.get(0).get("entityId");	
+		List<Map<String, String>> groupOrgList = JsonPath.from(response01).get("groupOrgList");
+		Assert.assertTrue(entityList.size() > 0);
 		
-		assertEquals(value_Id, "792676");
+		
+		// Verification of Entitylist		
+		assertEquals(entityList.get(0).get("entityId"), "792676");
+		assertEquals(entityList.get(0).get("entityType"), "Single Org");
+		assertEquals(entityList.get(0).get("primaryTaxonomy"), "NHS Digital");
+		assertEquals(entityList.get(0).get("secondaryTaxonomy"), "");
+		
+		// Verification of singleOrgList		
+		assertEquals(singleOrgList.get(0).get("entityId"), "792676");
+		assertEquals(singleOrgList.get(0).get("odsCode"), "REM");
+		assertEquals(singleOrgList.get(0).get("name"), "Liverpool University Hospitals NHS Foundation Trust");
+		assertEquals(singleOrgList.get(0).get("orgType"), "NHS Trust");
+		assertEquals(singleOrgList.get(0).get("peer"), "");
+		assertEquals(singleOrgList.get(0).get("region"), "North West");
+		assertEquals(singleOrgList.get(0).get("stp"), "CHESHIRE AND MERSEYSIDE STP");
+		
+		
+		
+		// Verification of groupOrgList		
+		assertEquals(groupOrgList.get(0).get("entityId"), "724241");
+		assertEquals(groupOrgList.get(0).get("groupType"), "Region");
+		assertEquals(groupOrgList.get(0).get("name"), "East of England");
+		assertEquals(groupOrgList.get(0).get("budgetTotal"), "0");
+		assertEquals(groupOrgList.get(0).get("budgetIT"), "0");
+		assertEquals(groupOrgList.get(0).get("budgetCyber"), "0");
 		
 		//System.out.print(value_Id);
 	}
