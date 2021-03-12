@@ -37,7 +37,7 @@ public class Steps_stp_data_preprocessor {
 	}
 
 
-	@When("I make request to access")
+	@When("User make request to access")
 	public void i_make_request_to_access() {
 		RestAssured.baseURI = BASE_URL;
 		RequestSpecification request = RestAssured.given();
@@ -49,7 +49,7 @@ public class Steps_stp_data_preprocessor {
 	}
 
 
-	@Then("I expect response")
+	@Then("User expect response")
 	public void i_expect_response() {
 		
 
@@ -67,14 +67,14 @@ public class Steps_stp_data_preprocessor {
 		assertEquals(entityList.get(0).get("entityId"), "792676");
 		assertEquals(entityList.get(0).get("entityType"), "Single Org");
 		assertEquals(entityList.get(0).get("primaryTaxonomy"), "NHS Digital");
-		assertEquals(entityList.get(0).get("secondaryTaxonomy"), "");
+		assertEquals(entityList.get(0).get("secondaryTaxonomy"), null);
 		
 		// Verification of singleOrgList		
 		assertEquals(singleOrgList.get(0).get("entityId"), "792676");
 		assertEquals(singleOrgList.get(0).get("odsCode"), "REM");
 		assertEquals(singleOrgList.get(0).get("name"), "Liverpool University Hospitals NHS Foundation Trust");
 		assertEquals(singleOrgList.get(0).get("orgType"), "NHS Trust");
-		assertEquals(singleOrgList.get(0).get("peer"), "");
+		assertEquals(singleOrgList.get(0).get("peer"), null);
 		assertEquals(singleOrgList.get(0).get("region"), "North West");
 		assertEquals(singleOrgList.get(0).get("stp"), "CHESHIRE AND MERSEYSIDE STP");
 		
@@ -84,10 +84,29 @@ public class Steps_stp_data_preprocessor {
 		assertEquals(groupOrgList.get(0).get("entityId"), "724241");
 		assertEquals(groupOrgList.get(0).get("groupType"), "Region");
 		assertEquals(groupOrgList.get(0).get("name"), "East of England");
-		assertEquals(groupOrgList.get(0).get("budgetTotal"), "0");
+		assertEquals(groupOrgList.get(0).get("budgetTotal").toString(),"0" );
 		assertEquals(groupOrgList.get(0).get("budgetIT"), "0");
 		assertEquals(groupOrgList.get(0).get("budgetCyber"), "0");
 		
 		//System.out.print(value_Id);
 	}
+	
+	
+	@Given("A call to the API")
+	public void a_call_to_the_api() {
+		
+		RestAssured.baseURI = BASE_URL;
+		RequestSpecification request = RestAssured.given();
+		Response response = request.get("/data-preprocessor/STP");
+		
+		response01 = response.asString();
+		
+		Assert.assertEquals(200, response.getStatusCode());
+	}
+
+	@Then("the response should have expected")
+	public void the_response_should_have_expected() {
+	    
+	}
+
 }

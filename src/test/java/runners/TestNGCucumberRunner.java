@@ -12,7 +12,7 @@ import io.cucumber.testng.CucumberOptions;
 		  ,monochrome = true
 		  ,publish = true
 		  ,snippets = io.cucumber.testng.CucumberOptions.SnippetType.CAMELCASE
-		  ,tags = "@SampleTest"
+		  ,tags = "@SmokeTest"
 		)  
 
 

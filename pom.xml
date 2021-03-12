@@ -11,6 +11,7 @@
 		 <maven.compiler.version>3.7.0</maven.compiler.version>  
 		 <cucumber.version>6.9.1</cucumber.version>  
 		 <jackson.version>2.12.1</jackson.version>
+		 <log4j.version>2.14.0</log4j.version>
  	</properties>  
 	
 	<dependencies>
@@ -97,6 +98,22 @@
 		    <artifactId>jackson-databind</artifactId>
 		    <version>${jackson.version}</version>
 		</dependency>
+		
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+		<dependency>
+		    <groupId>org.apache.logging.log4j</groupId>
+		    <artifactId>log4j-api</artifactId>
+		    <version>${log4j.version}</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+		<dependency>
+		    <groupId>org.apache.logging.log4j</groupId>
+		    <artifactId>log4j-core</artifactId>
+		    <version>${log4j.version}</version>
+		</dependency>
+		
 			
 	</dependencies>
 	

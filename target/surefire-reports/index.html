@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">3 methods, 3 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,7 +104,17 @@
                     <div class="method-list-content failed suite-Command_line_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="runners.TestNGCucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;The Genuine and valid user can get access data source STP on S3&quot;, &quot;Optional[To Test GET API call to...)">runScenario("The Genuine and valid user can get access data source STP on S3", "Optional[To Test GET API call to...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="runners.TestNGCucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;smoke test when Genuine and valid user get access data source STP on S3&quot;, &quot;Optional[To Test GET API...)">runScenario("smoke test when Genuine and valid user get access data source STP on S3", "Optional[To Test GET API...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="runners.TestNGCucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;smoke test the Json top level categories returned&quot;, &quot;Optional[To Test GET API call to the endpoint ...)">runScenario("smoke test the Json top level categories returned", "Optional[To Test GET API call to the endpoint ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="runners.TestNGCucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;smoke test the Json top level categories returned&quot;, &quot;Optional[To Test GET API call to the endpoint ...)">runScenario("smoke test the Json top level categories returned", "Optional[To Test GET API call to the endpoint ...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Command_line_suite -->
@@ -127,10 +137,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;The Genuine and valid user can get access data source STP on S3&quot;, &quot;Optional[To Test GET API call to...)">
-                  </a> <!-- runScenario("The Genuine and valid user can get access data source STP on S3", "Optional[To Test GET API call to...) -->
+                  <a name="runScenario(&quot;smoke test when Genuine and valid user get access data source STP on S3&quot;, &quot;Optional[To Test GET API...)">
+                  </a> <!-- runScenario("smoke test when Genuine and valid user get access data source STP on S3", "Optional[To Test GET API...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("The Genuine and valid user can get access data source STP on S3", "Optional[To Test GET API call to the endpoint https://bir-master-bir-stp-data-preprocessor.k8s-nonprod.texasplatform.uk/data-preprocessor/STP]")</span>
+                  <span class="parameters">("smoke test when Genuine and valid user get access data source STP on S3", "Optional[To Test GET API call to the endpoint https://bir-master-bir-stp-data-preprocessor.k8s-nonprod.texasplatform.uk/data-preprocessor/STP]")</span>
                   <div class="stack-trace">java.net.ConnectException: Connection timed out: connect
 	at java.base/sun.nio.ch.Net.connect0(Native Method)
 	at java.base/sun.nio.ch.Net.connect(Net.java:574)
@@ -217,8 +227,172 @@
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
 	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171)
 	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
-	at stepDefinitions.Steps_stp_data_preprocessor.a_valid_endpoint_is_available(Steps_stp_data_preprocessor.java:21)
-	at ✽.A valid endpoint is available(file:///D:/Users/rupesh10934/eclipse-workspace/BRITestingFramework/src/test/resources/functionalTests/stp-data-preprocessor.feature:9)
+	at stepDefinitions.Steps_stp_data_preprocessor.a_valid_endpoint_is_available(Steps_stp_data_preprocessor.java:33)
+	at ✽.A valid endpoint is available(file:///D:/Users/rupesh10934/eclipse-workspace/BRITestingFramework/src/test/resources/functionalTests/stp-data-preprocessor.feature:8)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;smoke test the Json top level categories returned&quot;, &quot;Optional[To Test GET API call to the endpoint ...)">
+                  </a> <!-- runScenario("smoke test the Json top level categories returned", "Optional[To Test GET API call to the endpoint ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("smoke test the Json top level categories returned", "Optional[To Test GET API call to the endpoint https://bir-master-bir-stp-data-preprocessor.k8s-nonprod.texasplatform.uk/data-preprocessor/STP]")</span>
+                  <div class="stack-trace">java.net.ConnectException: Connection timed out: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:574)
+	at java.base/sun.nio.ch.Net.connect(Net.java:563)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+	at java.base/java.net.Socket.connect(Socket.java:648)
+	at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:542)
+	at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:414)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2055)
+	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:495)
+	at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:452)
+	at io.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1451)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1200)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
+	at stepDefinitions.Steps_stp_data_preprocessor.a_call_to_the_api(Steps_stp_data_preprocessor.java:100)
+	at ✽.A call to the API(file:///D:/Users/rupesh10934/eclipse-workspace/BRITestingFramework/src/test/resources/functionalTests/stp-data-preprocessor.feature:13)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;smoke test the Json top level categories returned&quot;, &quot;Optional[To Test GET API call to the endpoint ...)">
+                  </a> <!-- runScenario("smoke test the Json top level categories returned", "Optional[To Test GET API call to the endpoint ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("smoke test the Json top level categories returned", "Optional[To Test GET API call to the endpoint https://bir-master-bir-stp-data-preprocessor.k8s-nonprod.texasplatform.uk/data-preprocessor/STP]")</span>
+                  <div class="stack-trace">java.net.ConnectException: Connection timed out: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:574)
+	at java.base/sun.nio.ch.Net.connect(Net.java:563)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+	at java.base/java.net.Socket.connect(Socket.java:648)
+	at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:542)
+	at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:414)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2055)
+	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:495)
+	at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:452)
+	at io.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1451)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1200)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
+	at stepDefinitions.Steps_stp_data_preprocessor.a_call_to_the_api(Steps_stp_data_preprocessor.java:100)
+	at ✽.A call to the API(file:///D:/Users/rupesh10934/eclipse-workspace/BRITestingFramework/src/test/resources/functionalTests/stp-data-preprocessor.feature:13)
 ... Removed 20 stack frames
 </div> <!-- stack-trace -->
                   <em>
@@ -287,16 +461,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runners.TestNGCucumberRunner')
-data.setCell(0, 3, 64377);
+data.setCell(0, 3, 66670);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'runners.TestNGCucumberRunner')
+data.setCell(1, 3, 63361);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'runners.TestNGCucumberRunner')
+data.setCell(2, 3, 63185);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -330,12 +512,24 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">runScenario("The Genuine and valid user can get access data source STP on S3", "Optional[To Test GET API call to...)</span>
-                <span class="method-start">374 ms</span>
+                <span class="method-name">runScenario("smoke test when Genuine and valid user get access data source STP on S3", "Optional[To Test GET API...)</span>
+                <span class="method-start">1203 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("smoke test the Json top level categories returned", "Optional[To Test GET API call to the endpoint ...)</span>
+                <span class="method-start">67879 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("smoke test the Json top level categories returned", "Optional[To Test GET API call to the endpoint ...)</span>
+                <span class="method-start">131242 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">64757 ms</span>
+                <span class="method-start">194429 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

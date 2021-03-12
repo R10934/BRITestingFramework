@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-26T15:47:58 IST" name="Command line suite" finished-at="2021-02-26T15:49:05 IST" duration-ms="66770">
+  <suite started-at="2021-03-02T15:03:07 IST" name="Command line suite" finished-at="2021-03-02T15:06:24 IST" duration-ms="197075">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGCucumberRunner@564fabc8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-02-26T15:47:58 IST" name="Command line test" finished-at="2021-02-26T15:49:05 IST" duration-ms="66770">
+    <test started-at="2021-03-02T15:03:07 IST" name="Command line test" finished-at="2021-03-02T15:06:24 IST" duration-ms="197075">
       <class name="runners.TestNGCucumberRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runners.TestNGCucumberRunner@564fabc8]" started-at="2021-02-26T15:47:58 IST" name="setUpClass" finished-at="2021-02-26T15:47:58 IST" duration-ms="363" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runners.TestNGCucumberRunner@564fabc8]" started-at="2021-03-02T15:03:07 IST" name="setUpClass" finished-at="2021-03-02T15:03:09 IST" duration-ms="1171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGCucumberRunner@564fabc8]" started-at="2021-02-26T15:47:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-02-26T15:49:03 IST" duration-ms="64377" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGCucumberRunner@564fabc8]" started-at="2021-03-02T15:03:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-02T15:04:15 IST" duration-ms="66670" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["The Genuine and valid user can get access data source STP on S3"]]>
+                <![CDATA["smoke test when Genuine and valid user get access data source STP on S3"]]>
               </value>
             </param>
             <param index="1">
@@ -138,15 +138,243 @@ at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCal
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
 at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171)
 at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
-at stepDefinitions.Steps_stp_data_preprocessor.a_valid_endpoint_is_available(Steps_stp_data_preprocessor.java:21)
-at ✽.A valid endpoint is available(file:///D:/Users/rupesh10934/eclipse-workspace/BRITestingFramework/src/test/resources/functionalTests/stp-data-preprocessor.feature:9)
+at stepDefinitions.Steps_stp_data_preprocessor.a_valid_endpoint_is_available(Steps_stp_data_preprocessor.java:33)
+at ✽.A valid endpoint is available(file:///D:/Users/rupesh10934/eclipse-workspace/BRITestingFramework/src/test/resources/functionalTests/stp-data-preprocessor.feature:8)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.net.ConnectException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestNGCucumberRunner@564fabc8]" started-at="2021-02-26T15:49:03 IST" name="tearDownClass" finished-at="2021-02-26T15:49:05 IST" duration-ms="1997" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGCucumberRunner@564fabc8]" started-at="2021-03-02T15:04:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-02T15:05:19 IST" duration-ms="63361" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["smoke test the Json top level categories returned"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[To Test GET API call to the endpoint https://bir-master-bir-stp-data-preprocessor.k8s-nonprod.texasplatform.uk/data-preprocessor/STP]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.net.ConnectException">
+            <message>
+              <![CDATA[Connection timed out: connect]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.net.ConnectException: Connection timed out: connect
+at java.base/sun.nio.ch.Net.connect0(Native Method)
+at java.base/sun.nio.ch.Net.connect(Net.java:574)
+at java.base/sun.nio.ch.Net.connect(Net.java:563)
+at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+at java.base/java.net.Socket.connect(Socket.java:648)
+at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:542)
+at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:414)
+at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
+at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2055)
+at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:495)
+at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:452)
+at io.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)
+at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1451)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1200)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+at io.restassured.filter.Filter$filter.call(Unknown Source)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+at io.restassured.filter.Filter$filter.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+at io.restassured.filter.FilterContext$next.call(Unknown Source)
+at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171)
+at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
+at stepDefinitions.Steps_stp_data_preprocessor.a_call_to_the_api(Steps_stp_data_preprocessor.java:100)
+at ✽.A call to the API(file:///D:/Users/rupesh10934/eclipse-workspace/BRITestingFramework/src/test/resources/functionalTests/stp-data-preprocessor.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.net.ConnectException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGCucumberRunner@564fabc8]" started-at="2021-03-02T15:05:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-02T15:06:22 IST" duration-ms="63185" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["smoke test the Json top level categories returned"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[To Test GET API call to the endpoint https://bir-master-bir-stp-data-preprocessor.k8s-nonprod.texasplatform.uk/data-preprocessor/STP]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.net.ConnectException">
+            <message>
+              <![CDATA[Connection timed out: connect]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.net.ConnectException: Connection timed out: connect
+at java.base/sun.nio.ch.Net.connect0(Native Method)
+at java.base/sun.nio.ch.Net.connect(Net.java:574)
+at java.base/sun.nio.ch.Net.connect(Net.java:563)
+at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+at java.base/java.net.Socket.connect(Socket.java:648)
+at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:542)
+at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:414)
+at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
+at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2055)
+at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:495)
+at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:452)
+at io.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)
+at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1451)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1200)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+at io.restassured.filter.Filter$filter.call(Unknown Source)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+at io.restassured.filter.Filter$filter.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+at io.restassured.filter.FilterContext$next.call(Unknown Source)
+at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171)
+at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
+at stepDefinitions.Steps_stp_data_preprocessor.a_call_to_the_api(Steps_stp_data_preprocessor.java:100)
+at ✽.A call to the API(file:///D:/Users/rupesh10934/eclipse-workspace/BRITestingFramework/src/test/resources/functionalTests/stp-data-preprocessor.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.net.ConnectException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestNGCucumberRunner@564fabc8]" started-at="2021-03-02T15:06:22 IST" name="tearDownClass" finished-at="2021-03-02T15:06:24 IST" duration-ms="2607" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
