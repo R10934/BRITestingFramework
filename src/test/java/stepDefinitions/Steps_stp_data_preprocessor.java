@@ -92,21 +92,21 @@ public class Steps_stp_data_preprocessor {
 	}
 	
 	
-	@Given("A call to the API")
-	public void a_call_to_the_api() {
-		
-		RestAssured.baseURI = BASE_URL;
-		RequestSpecification request = RestAssured.given();
-		Response response = request.get("/data-preprocessor/STP");
-		
-		response01 = response.asString();
-		
-		Assert.assertEquals(200, response.getStatusCode());
-	}
-
-	@Then("the response should have expected")
-	public void the_response_should_have_expected() {
-	    
-	}
+	/*
+	 * @Given("A call to the API") public void a_call_to_the_api() {
+	 * 
+	 * RestAssured.baseURI = BASE_URL; RequestSpecification request =
+	 * RestAssured.given(); Response response =
+	 * request.get("/data-preprocessor/STP");
+	 * 
+	 * response01 = response.asString();
+	 * 
+	 * Assert.assertEquals(200, response.getStatusCode()); }
+	 * 
+	 * @Then("the response should have expected") public void
+	 * the_response_should_have_expected() {
+	 * 
+	 * }
+	 */
 
 }
