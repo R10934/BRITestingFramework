@@ -1,0 +1,31 @@
+{
+    "nhstaxonomy": {
+        "mappings": {
+            "taxonomy": {
+                "properties": {
+                    "name": {
+                        "type": "text"
+                    },
+                    "properties": {
+                        "type": "object"
+                    },
+                    "source": {
+                        "type": "text"
+                    },
+                    "taxonomyID": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "userRole": {
+                        "type": "text"
+                    }
+                }
+            }
+        }
+    }
+}

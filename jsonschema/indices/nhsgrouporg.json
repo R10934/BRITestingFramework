@@ -1,0 +1,56 @@
+{
+    "nhsgrouporg": {
+        "mappings": {
+            "group": {
+                "properties": {
+                    "budgetCyber": {
+                        "type": "float"
+                    },
+                    "budgetIT": {
+                        "type": "float"
+                    },
+                    "budgetTotal": {
+                        "type": "float"
+                    },
+                    "description": {
+                        "type": "text"
+                    },
+                    "entityId": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "groupType": {
+                        "type": "text"
+                    },
+                    "lastUpdated": {
+                        "type": "date",
+                        "store": true,
+                        "format": "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+                    },
+                    "name": {
+                        "type": "text",
+                        "fields": {
+                            "sort": {
+                                "type": "keyword"
+                            }
+                        }
+                    },
+                    "odsCode": {
+                        "type": "text"
+                    },
+                    "size": {
+                        "type": "text"
+                    },
+                    "userRole": {
+                        "type": "text"
+                    }
+                }
+            }
+        }
+    }
+}

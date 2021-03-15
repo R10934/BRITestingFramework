@@ -1,0 +1,44 @@
+{
+    "nhsentity": {
+        "mappings": {
+            "entity": {
+                "properties": {
+                    "doc": {
+                        "properties": {
+                            "primaryTaxonomy": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "entityId": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "entityType": {
+                        "type": "text"
+                    },
+                    "primaryTaxonomy": {
+                        "type": "text"
+                    },
+                    "secondaryTaxonomy": {
+                        "type": "text"
+                    },
+                    "userRole": {
+                        "type": "text"
+                    }
+                }
+            }
+        }
+    }
+}

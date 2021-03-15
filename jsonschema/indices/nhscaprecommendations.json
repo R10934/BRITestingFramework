@@ -1,0 +1,97 @@
+{
+    "nhscaprecommendations": {
+        "mappings": {
+            "snapshot": {
+                "properties": {
+                    "datestamp": {
+                        "type": "date"
+                    },
+                    "entityId": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "existingCapabilities": {
+                        "type": "nested",
+                        "properties": {
+                            "capability": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "name": {
+                                "type": "text"
+                            },
+                            "value": {
+                                "type": "text"
+                            }
+                        }
+                    },
+                    "notFoundCapabilities": {
+                        "type": "nested",
+                        "properties": {
+                            "capability": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "cveCount": {
+                                "type": "long"
+                            },
+                            "name": {
+                                "type": "text"
+                            },
+                            "value": {
+                                "type": "text"
+                            }
+                        }
+                    },
+                    "ods": {
+                        "type": "text"
+                    },
+                    "recommendedServices": {
+                        "type": "nested",
+                        "properties": {
+                            "name": {
+                                "type": "text"
+                            },
+                            "value": {
+                                "type": "text"
+                            }
+                        }
+                    },
+                    "snapshotId": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "userRole": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

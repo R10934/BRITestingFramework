@@ -1,0 +1,119 @@
+{
+    "nhsconfidence": {
+        "mappings": {
+            "confidence": {
+                "properties": {
+                    "confidence": {
+                        "type": "nested",
+                        "properties": {
+                            "assetConfidence": {
+                                "type": "float"
+                            },
+                            "capabilityConfidence": {
+                                "type": "float"
+                            },
+                            "name": {
+                                "type": "text"
+                            },
+                            "overallConfidence": {
+                                "type": "float"
+                            },
+                            "value": {
+                                "type": "text"
+                            },
+                            "vulnerabilityConfidence": {
+                                "type": "float"
+                            }
+                        }
+                    },
+                    "confidenceRecommendations": {
+                        "type": "text"
+                    },
+                    "entityId": {
+                        "type": "text"
+                    },
+                    "name": {
+                        "type": "text"
+                    },
+                    "odsCode": {
+                        "type": "text"
+                    },
+                    "snapshotDate": {
+                        "type": "date"
+                    },
+                    "snapshotId": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "sources": {
+                        "type": "nested",
+                        "properties": {
+                            "datasourceAsset": {
+                                "properties": {
+                                    "source": {
+                                        "type": "text",
+                                        "fields": {
+                                            "keyword": {
+                                                "type": "keyword",
+                                                "ignore_above": 256
+                                            }
+                                        }
+                                    },
+                                    "timestamp": {
+                                        "type": "date"
+                                    }
+                                }
+                            },
+                            "datasourceCapability": {
+                                "properties": {
+                                    "source": {
+                                        "type": "text",
+                                        "fields": {
+                                            "keyword": {
+                                                "type": "keyword",
+                                                "ignore_above": 256
+                                            }
+                                        }
+                                    },
+                                    "timestamp": {
+                                        "type": "date"
+                                    }
+                                }
+                            },
+                            "datasourceVulnerability": {
+                                "properties": {
+                                    "source": {
+                                        "type": "text",
+                                        "fields": {
+                                            "keyword": {
+                                                "type": "keyword",
+                                                "ignore_above": 256
+                                            }
+                                        }
+                                    },
+                                    "timestamp": {
+                                        "type": "date"
+                                    }
+                                }
+                            },
+                            "name": {
+                                "type": "text"
+                            },
+                            "value": {
+                                "type": "text"
+                            }
+                        }
+                    },
+                    "userRole": {
+                        "type": "text"
+                    }
+                }
+            }
+        }
+    }
+}

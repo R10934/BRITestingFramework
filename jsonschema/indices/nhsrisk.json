@@ -1,0 +1,49 @@
+{
+    "nhsrisk": {
+        "mappings": {
+            "risk": {
+                "properties": {
+                    "entityId": {
+                        "type": "keyword",
+                        "fields": {
+                            "text": {
+                                "type": "text"
+                            }
+                        }
+                    },
+                    "odsCode": {
+                        "type": "keyword",
+                        "fields": {
+                            "text": {
+                                "type": "text"
+                            }
+                        }
+                    },
+                    "overallRisk": {
+                        "type": "float"
+                    },
+                    "risks": {
+                        "type": "nested",
+                        "properties": {
+                            "name": {
+                                "type": "text"
+                            },
+                            "value": {
+                                "type": "text"
+                            }
+                        }
+                    },
+                    "snapshotDate": {
+                        "type": "date"
+                    },
+                    "taxonomyID": {
+                        "type": "text"
+                    },
+                    "userRole": {
+                        "type": "text"
+                    }
+                }
+            }
+        }
+    }
+}

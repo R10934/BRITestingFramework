@@ -1,0 +1,40 @@
+{
+    "nhsrole": {
+        "mappings": {
+            "role": {
+                "properties": {
+                    "description": {
+                        "type": "text"
+                    },
+                    "id": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "indices": {
+                        "type": "text"
+                    },
+                    "odsCode": {
+                        "type": "text"
+                    },
+                    "privileges": {
+                        "type": "text"
+                    },
+                    "role": {
+                        "type": "text"
+                    },
+                    "timestamp": {
+                        "type": "date"
+                    },
+                    "users": {
+                        "type": "text"
+                    }
+                }
+            }
+        }
+    }
+}

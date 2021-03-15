@@ -1,0 +1,93 @@
+{
+    "nhssingleorg": {
+        "mappings": {
+            "single": {
+                "properties": {
+                    "budgetCyber": {
+                        "type": "float"
+                    },
+                    "budgetIT": {
+                        "type": "float"
+                    },
+                    "budgetTotal": {
+                        "type": "float"
+                    },
+                    "datasource": {
+                        "properties": {
+                            "lastUpdated": {
+                                "type": "date"
+                            },
+                            "publishedDate": {
+                                "type": "date"
+                            },
+                            "source": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "sourceData": {
+                                "type": "date"
+                            },
+                            "type": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "entityId": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "lastUpdated": {
+                        "type": "date",
+                        "store": true,
+                        "format": "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+                    },
+                    "name": {
+                        "type": "text",
+                        "fields": {
+                            "sort": {
+                                "type": "keyword"
+                            }
+                        }
+                    },
+                    "odsCode": {
+                        "type": "text"
+                    },
+                    "orgType": {
+                        "type": "text"
+                    },
+                    "peer": {
+                        "type": "text"
+                    },
+                    "region": {
+                        "type": "text"
+                    },
+                    "size": {
+                        "type": "text"
+                    },
+                    "stp": {
+                        "type": "text"
+                    },
+                    "userRole": {
+                        "type": "text"
+                    }
+                }
+            }
+        }
+    }
+}

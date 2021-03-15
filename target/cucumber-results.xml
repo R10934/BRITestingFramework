@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="193.34">
-    <testcase classname="To Test GET API call to the endpoint https://bir-master-bir-stp-data-preprocessor.k8s-nonprod.texasplatform.uk/data-preprocessor/STP" name="smoke test when Genuine and valid user get access data source STP on S3" time="66.315">
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="191.067">
+    <testcase classname="To Test GET API call to the endpoint https://bir-master-bir-stp-data-preprocessor.k8s-nonprod.texasplatform.uk/data-preprocessor/STP" name="smoke test when Genuine and valid user get access data source STP on S3" time="64.45">
         <failure message="Connection timed out: connect" type="java.net.ConnectException"><![CDATA[Given A valid endpoint is available.........................................failed
 When User make request to access............................................skipped
 Then User expect response...................................................skipped
@@ -116,7 +116,7 @@ java.net.ConnectException: Connection timed out: connect
 	at ✽.A valid endpoint is available(file:///D:/Users/rupesh10934/eclipse-workspace/BRITestingFramework/src/test/resources/functionalTests/stp-data-preprocessor.feature:8)
 ]]></failure>
     </testcase>
-    <testcase classname="To Test GET API call to the endpoint https://bir-master-bir-stp-data-preprocessor.k8s-nonprod.texasplatform.uk/data-preprocessor/STP" name="smoke test the Json top level categories returned" time="63.351">
+    <testcase classname="To Test GET API call to the endpoint https://bir-master-bir-stp-data-preprocessor.k8s-nonprod.texasplatform.uk/data-preprocessor/STP" name="smoke test the Json top level categories returned" time="63.182">
         <failure message="Connection timed out: connect" type="java.net.ConnectException"><![CDATA[Given A call to the API.....................................................failed
 Then the response should have expected......................................skipped
 
@@ -213,7 +213,7 @@ java.net.ConnectException: Connection timed out: connect
 	at ✽.A call to the API(file:///D:/Users/rupesh10934/eclipse-workspace/BRITestingFramework/src/test/resources/functionalTests/stp-data-preprocessor.feature:13)
 ]]></failure>
     </testcase>
-    <testcase classname="To Test GET API call to the endpoint https://bir-master-bir-stp-data-preprocessor.k8s-nonprod.texasplatform.uk/data-preprocessor/STP" name="smoke test the Json top level categories returned 2" time="63.18">
+    <testcase classname="To Test GET API call to the endpoint https://bir-master-bir-stp-data-preprocessor.k8s-nonprod.texasplatform.uk/data-preprocessor/STP" name="smoke test the Json top level categories returned 2" time="63.175">
         <failure message="Connection timed out: connect" type="java.net.ConnectException"><![CDATA[Given A call to the API.....................................................failed
 Then the response should have expected......................................skipped
 

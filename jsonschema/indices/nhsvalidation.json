@@ -1,0 +1,40 @@
+{
+    "nhsvalidation": {
+        "mappings": {
+            "validation": {
+                "properties": {
+                    "2x2Percentile": {
+                        "type": "text"
+                    },
+                    "BIRDeviation": {
+                        "type": "text"
+                    },
+                    "BIRPercentile": {
+                        "type": "text"
+                    },
+                    "BitsightPercentile": {
+                        "type": "text"
+                    },
+                    "CEPlusPercentile": {
+                        "type": "text"
+                    },
+                    "DSPTStatus": {
+                        "type": "text"
+                    },
+                    "ODSCode": {
+                        "type": "text"
+                    },
+                    "Organisation": {
+                        "type": "text"
+                    },
+                    "Timestamp": {
+                        "type": "text"
+                    },
+                    "UCRFPercentile": {
+                        "type": "text"
+                    }
+                }
+            }
+        }
+    }
+}

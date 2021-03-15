@@ -1,0 +1,125 @@
+{
+    "nhsasset": {
+        "mappings": {
+            "asset": {
+                "properties": {
+                    "action": {
+                        "type": "text"
+                    },
+                    "capabilities": {
+                        "properties": {
+                            "name": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "value": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "domain": {
+                        "type": "text"
+                    },
+                    "id": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "machineId": {
+                        "type": "text"
+                    },
+                    "name": {
+                        "type": "text"
+                    },
+                    "ods": {
+                        "type": "keyword",
+                        "fields": {
+                            "text": {
+                                "type": "text"
+                            }
+                        }
+                    },
+                    "osBuild": {
+                        "type": "text"
+                    },
+                    "osPlatform": {
+                        "type": "text"
+                    },
+                    "physicalAssetGroupId": {
+                        "type": "text"
+                    },
+                    "privatIps": {
+                        "type": "text"
+                    },
+                    "publicIp": {
+                        "type": "text"
+                    },
+                    "source": {
+                        "type": "text"
+                    },
+                    "sourceDate": {
+                        "type": "date"
+                    },
+                    "subtype": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "timestamp": {
+                        "type": "date"
+                    },
+                    "type": {
+                        "type": "text"
+                    },
+                    "value": {
+                        "type": "text"
+                    },
+                    "version": {
+                        "type": "text"
+                    },
+                    "vulnerabilities": {
+                        "properties": {
+                            "name": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "value": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

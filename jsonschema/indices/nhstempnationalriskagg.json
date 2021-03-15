@@ -1,0 +1,78 @@
+{
+    "nhstempnationalriskagg": {
+        "mappings": {
+            "agg": {
+                "properties": {
+                    "bucket_name": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "datestamp": {
+                        "type": "date"
+                    },
+                    "doc_count": {
+                        "type": "float"
+                    },
+                    "financial_risk": {
+                        "type": "nested",
+                        "properties": {
+                            "name": {
+                                "type": "text"
+                            },
+                            "value": {
+                                "type": "text"
+                            }
+                        }
+                    },
+                    "key": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "operational_risk": {
+                        "type": "nested",
+                        "properties": {
+                            "name": {
+                                "type": "text"
+                            },
+                            "value": {
+                                "type": "text"
+                            }
+                        }
+                    },
+                    "patientHealth_risk": {
+                        "type": "nested",
+                        "properties": {
+                            "name": {
+                                "type": "text"
+                            },
+                            "value": {
+                                "type": "text"
+                            }
+                        }
+                    },
+                    "reputational_risk": {
+                        "type": "nested",
+                        "properties": {
+                            "name": {
+                                "type": "text"
+                            },
+                            "value": {
+                                "type": "text"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

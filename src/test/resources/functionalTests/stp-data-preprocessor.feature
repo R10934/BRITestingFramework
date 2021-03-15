@@ -9,11 +9,12 @@ Feature: To Test GET API call to the endpoint https://bir-master-bir-stp-data-pr
     When User make request to access
     Then User expect response
 
-  Scenario Outline: smoke test the Json top level categories returned
-    Given A call to the API
-    Then the response should have expected
-
-    Examples: 
-      | entityList    |
-      | singleOrgList |
-      | groupOrgList  |
+#  Scenario Outline: smoke test the Json top level categories returned
+#    Given A call to the API
+#    Then the response should have expected
+#
+#    Examples: 
+#      | entityList    |
+#      | singleOrgList |
+#      | groupOrgList  |
+#

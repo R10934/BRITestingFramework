@@ -1,0 +1,41 @@
+{
+    "nhscapability": {
+        "mappings": {
+            "capability": {
+                "properties": {
+                    "action": {
+                        "type": "text"
+                    },
+                    "id": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "name": {
+                        "type": "text"
+                    },
+                    "source": {
+                        "type": "text"
+                    },
+                    "sourceDate": {
+                        "type": "date",
+                        "store": true,
+                        "format": "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+                    },
+                    "timestamp": {
+                        "type": "date",
+                        "store": true,
+                        "format": "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+                    },
+                    "type": {
+                        "type": "text"
+                    }
+                }
+            }
+        }
+    }
+}

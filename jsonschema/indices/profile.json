@@ -1,0 +1,19 @@
+{
+    "profile": {
+        "mappings": {
+            "person": {
+                "properties": {
+                    "firstname": {
+                        "type": "text"
+                    },
+                    "lastname": {
+                        "type": "text"
+                    },
+                    "technologies": {
+                        "type": "nested"
+                    }
+                }
+            }
+        }
+    }
+}

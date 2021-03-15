@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 198.204 sec <<< FAILURE!
-runScenario(runners.TestNGCucumberRunner)  Time elapsed: 66.678 sec  <<< FAILURE!
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 195.595 sec <<< FAILURE!
+runScenario(runners.TestNGCucumberRunner)  Time elapsed: 64.623 sec  <<< FAILURE!
 java.net.ConnectException: Connection timed out: connect
 	at java.base/sun.nio.ch.Net.connect0(Native Method)
 	at java.base/sun.nio.ch.Net.connect(Net.java:574)
@@ -112,7 +112,7 @@ java.net.ConnectException: Connection timed out: connect
 	at stepDefinitions.Steps_stp_data_preprocessor.a_valid_endpoint_is_available(Steps_stp_data_preprocessor.java:33)
 	at ?.A valid endpoint is available(file:///D:/Users/rupesh10934/eclipse-workspace/BRITestingFramework/src/test/resources/functionalTests/stp-data-preprocessor.feature:8)
 
-runScenario(runners.TestNGCucumberRunner)  Time elapsed: 63.359 sec  <<< FAILURE!
+runScenario(runners.TestNGCucumberRunner)  Time elapsed: 63.2 sec  <<< FAILURE!
 java.net.ConnectException: Connection timed out: connect
 	at java.base/sun.nio.ch.Net.connect0(Native Method)
 	at java.base/sun.nio.ch.Net.connect(Net.java:574)
@@ -204,7 +204,7 @@ java.net.ConnectException: Connection timed out: connect
 	at stepDefinitions.Steps_stp_data_preprocessor.a_call_to_the_api(Steps_stp_data_preprocessor.java:100)
 	at ?.A call to the API(file:///D:/Users/rupesh10934/eclipse-workspace/BRITestingFramework/src/test/resources/functionalTests/stp-data-preprocessor.feature:13)
 
-runScenario(runners.TestNGCucumberRunner)  Time elapsed: 63.186 sec  <<< FAILURE!
+runScenario(runners.TestNGCucumberRunner)  Time elapsed: 63.197 sec  <<< FAILURE!
 java.net.ConnectException: Connection timed out: connect
 	at java.base/sun.nio.ch.Net.connect0(Native Method)
 	at java.base/sun.nio.ch.Net.connect(Net.java:574)

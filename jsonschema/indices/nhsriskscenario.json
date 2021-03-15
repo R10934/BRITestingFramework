@@ -1,0 +1,109 @@
+{
+    "nhsriskscenario": {
+        "mappings": {
+            "scenario": {
+                "properties": {
+                    "assetId": {
+                        "type": "text"
+                    },
+                    "assetType": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "capType": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "datestamp": {
+                        "type": "date"
+                    },
+                    "financialRisk": {
+                        "type": "float"
+                    },
+                    "mitigation": {
+                        "type": "float"
+                    },
+                    "ods": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "operationalRisk": {
+                        "type": "float"
+                    },
+                    "os": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "patientHealthRisk": {
+                        "type": "float"
+                    },
+                    "reputationalRisk": {
+                        "type": "float"
+                    },
+                    "residualVuln": {
+                        "type": "float"
+                    },
+                    "riskScore": {
+                        "type": "float"
+                    },
+                    "scenarioId": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "vulnId": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "vulnProperties": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "vulnType": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

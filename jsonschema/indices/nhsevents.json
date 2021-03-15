@@ -1,0 +1,810 @@
+{
+    "nhsevents": {
+        "mappings": {
+            "events": {
+                "properties": {
+                    "_shards": {
+                        "properties": {
+                            "failed": {
+                                "type": "long"
+                            },
+                            "skipped": {
+                                "type": "long"
+                            },
+                            "successful": {
+                                "type": "long"
+                            },
+                            "total": {
+                                "type": "long"
+                            }
+                        }
+                    },
+                    "assets": {
+                        "properties": {
+                            "action": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "atpMachineId": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "atpMachineName": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "domain": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "elementId": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "financialValue": {
+                                "type": "float"
+                            },
+                            "importance": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "operationalValue": {
+                                "type": "float"
+                            },
+                            "osBuild": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "osPlatform": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "overallValue": {
+                                "type": "float"
+                            },
+                            "patientHealthValue": {
+                                "type": "float"
+                            },
+                            "privatIps": {
+                                "properties": {
+                                    "ip": {
+                                        "type": "text",
+                                        "fields": {
+                                            "keyword": {
+                                                "type": "keyword",
+                                                "ignore_above": 256
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "publicIp": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "reputationalValue": {
+                                "type": "float"
+                            },
+                            "subtype": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "type": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "value": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "windows10Version": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "capabilities": {
+                        "properties": {
+                            "cePlusStrength": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "dsptResponse": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "dsptStrength": {
+                                "type": "float"
+                            },
+                            "elementId": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "name": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "type": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "confidence": {
+                        "type": "long"
+                    },
+                    "effectedProductTerms": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "hits": {
+                        "properties": {
+                            "hits": {
+                                "properties": {
+                                    "_id": {
+                                        "type": "text",
+                                        "fields": {
+                                            "keyword": {
+                                                "type": "keyword",
+                                                "ignore_above": 256
+                                            }
+                                        }
+                                    },
+                                    "_index": {
+                                        "type": "text",
+                                        "fields": {
+                                            "keyword": {
+                                                "type": "keyword",
+                                                "ignore_above": 256
+                                            }
+                                        }
+                                    },
+                                    "_score": {
+                                        "type": "float"
+                                    },
+                                    "_source": {
+                                        "properties": {
+                                            "assets": {
+                                                "properties": {
+                                                    "action": {
+                                                        "type": "text",
+                                                        "fields": {
+                                                            "keyword": {
+                                                                "type": "keyword",
+                                                                "ignore_above": 256
+                                                            }
+                                                        }
+                                                    },
+                                                    "atpMachineId": {
+                                                        "type": "text",
+                                                        "fields": {
+                                                            "keyword": {
+                                                                "type": "keyword",
+                                                                "ignore_above": 256
+                                                            }
+                                                        }
+                                                    },
+                                                    "domain": {
+                                                        "type": "text",
+                                                        "fields": {
+                                                            "keyword": {
+                                                                "type": "keyword",
+                                                                "ignore_above": 256
+                                                            }
+                                                        }
+                                                    },
+                                                    "elementId": {
+                                                        "type": "text",
+                                                        "fields": {
+                                                            "keyword": {
+                                                                "type": "keyword",
+                                                                "ignore_above": 256
+                                                            }
+                                                        }
+                                                    },
+                                                    "financialValue": {
+                                                        "type": "float"
+                                                    },
+                                                    "operationalValue": {
+                                                        "type": "float"
+                                                    },
+                                                    "osBuild": {
+                                                        "type": "text",
+                                                        "fields": {
+                                                            "keyword": {
+                                                                "type": "keyword",
+                                                                "ignore_above": 256
+                                                            }
+                                                        }
+                                                    },
+                                                    "osPlatform": {
+                                                        "type": "text",
+                                                        "fields": {
+                                                            "keyword": {
+                                                                "type": "keyword",
+                                                                "ignore_above": 256
+                                                            }
+                                                        }
+                                                    },
+                                                    "overallValue": {
+                                                        "type": "float"
+                                                    },
+                                                    "patientHealthValue": {
+                                                        "type": "float"
+                                                    },
+                                                    "reputationalValue": {
+                                                        "type": "float"
+                                                    },
+                                                    "type": {
+                                                        "type": "text",
+                                                        "fields": {
+                                                            "keyword": {
+                                                                "type": "keyword",
+                                                                "ignore_above": 256
+                                                            }
+                                                        }
+                                                    },
+                                                    "windows10Version": {
+                                                        "type": "text",
+                                                        "fields": {
+                                                            "keyword": {
+                                                                "type": "keyword",
+                                                                "ignore_above": 256
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "confidence": {
+                                                "type": "long"
+                                            },
+                                            "id": {
+                                                "type": "text",
+                                                "fields": {
+                                                    "keyword": {
+                                                        "type": "keyword",
+                                                        "ignore_above": 256
+                                                    }
+                                                }
+                                            },
+                                            "ods": {
+                                                "type": "text",
+                                                "fields": {
+                                                    "keyword": {
+                                                        "type": "keyword",
+                                                        "ignore_above": 256
+                                                    }
+                                                }
+                                            },
+                                            "relationships": {
+                                                "properties": {
+                                                    "attributes": {
+                                                        "properties": {
+                                                            "name": {
+                                                                "type": "text",
+                                                                "fields": {
+                                                                    "keyword": {
+                                                                        "type": "keyword",
+                                                                        "ignore_above": 256
+                                                                    }
+                                                                }
+                                                            },
+                                                            "value": {
+                                                                "type": "text",
+                                                                "fields": {
+                                                                    "keyword": {
+                                                                        "type": "keyword",
+                                                                        "ignore_above": 256
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "elementId": {
+                                                        "type": "text",
+                                                        "fields": {
+                                                            "keyword": {
+                                                                "type": "keyword",
+                                                                "ignore_above": 256
+                                                            }
+                                                        }
+                                                    },
+                                                    "riskElementId1": {
+                                                        "type": "text",
+                                                        "fields": {
+                                                            "keyword": {
+                                                                "type": "keyword",
+                                                                "ignore_above": 256
+                                                            }
+                                                        }
+                                                    },
+                                                    "riskElementId2": {
+                                                        "type": "text",
+                                                        "fields": {
+                                                            "keyword": {
+                                                                "type": "keyword",
+                                                                "ignore_above": 256
+                                                            }
+                                                        }
+                                                    },
+                                                    "type": {
+                                                        "type": "text",
+                                                        "fields": {
+                                                            "keyword": {
+                                                                "type": "keyword",
+                                                                "ignore_above": 256
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "source": {
+                                                "type": "text",
+                                                "fields": {
+                                                    "keyword": {
+                                                        "type": "keyword",
+                                                        "ignore_above": 256
+                                                    }
+                                                }
+                                            },
+                                            "sourceDate": {
+                                                "type": "date"
+                                            },
+                                            "timestamp": {
+                                                "type": "date"
+                                            },
+                                            "type": {
+                                                "type": "text",
+                                                "fields": {
+                                                    "keyword": {
+                                                        "type": "keyword",
+                                                        "ignore_above": 256
+                                                    }
+                                                }
+                                            },
+                                            "user": {
+                                                "properties": {
+                                                    "org": {
+                                                        "type": "text",
+                                                        "fields": {
+                                                            "keyword": {
+                                                                "type": "keyword",
+                                                                "ignore_above": 256
+                                                            }
+                                                        }
+                                                    },
+                                                    "role": {
+                                                        "type": "text",
+                                                        "fields": {
+                                                            "keyword": {
+                                                                "type": "keyword",
+                                                                "ignore_above": 256
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "_type": {
+                                        "type": "text",
+                                        "fields": {
+                                            "keyword": {
+                                                "type": "keyword",
+                                                "ignore_above": 256
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "max_score": {
+                                "type": "float"
+                            },
+                            "total": {
+                                "type": "long"
+                            }
+                        }
+                    },
+                    "id": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "ods": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "relationships": {
+                        "properties": {
+                            "attributes": {
+                                "properties": {
+                                    "name": {
+                                        "type": "text",
+                                        "fields": {
+                                            "keyword": {
+                                                "type": "keyword",
+                                                "ignore_above": 256
+                                            }
+                                        }
+                                    },
+                                    "value": {
+                                        "type": "text",
+                                        "fields": {
+                                            "keyword": {
+                                                "type": "keyword",
+                                                "ignore_above": 256
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "elementId": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "riskElementId1": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "riskElementId2": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "type": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "source": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "sourceDate": {
+                        "type": "date"
+                    },
+                    "timed_out": {
+                        "type": "boolean"
+                    },
+                    "timestamp": {
+                        "type": "date"
+                    },
+                    "took": {
+                        "type": "long"
+                    },
+                    "type": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "user": {
+                        "properties": {
+                            "org": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "role": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "vulnerabilities": {
+                        "properties": {
+                            "action": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "attackComplexity": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "attackVector": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "availabilityImpact": {
+                                "type": "float"
+                            },
+                            "confidentialityImpact": {
+                                "type": "float"
+                            },
+                            "cveId": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "description": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "effectedProductTerms": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "elementId": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "integrityImpact": {
+                                "type": "float"
+                            },
+                            "nodes": {
+                                "properties": {
+                                    "cpeMatch": {
+                                        "properties": {
+                                            "cpe23Uri": {
+                                                "type": "text",
+                                                "fields": {
+                                                    "keyword": {
+                                                        "type": "keyword",
+                                                        "ignore_above": 256
+                                                    }
+                                                }
+                                            },
+                                            "versionEndExcluding": {
+                                                "type": "text",
+                                                "fields": {
+                                                    "keyword": {
+                                                        "type": "keyword",
+                                                        "ignore_above": 256
+                                                    }
+                                                }
+                                            },
+                                            "vulnerable": {
+                                                "type": "text",
+                                                "fields": {
+                                                    "keyword": {
+                                                        "type": "keyword",
+                                                        "ignore_above": 256
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "operator": {
+                                        "type": "text",
+                                        "fields": {
+                                            "keyword": {
+                                                "type": "keyword",
+                                                "ignore_above": 256
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "patchRule": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "privilegesRequired": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "publishedDate": {
+                                "type": "date"
+                            },
+                            "scope": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "userInteraction": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "vulnType": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "vulnerabilityScore": {
+                                "type": "float"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
