@@ -1,5 +1,7 @@
 package stepDefinitions;
 
+import static org.testng.Assert.assertEquals;
+
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -51,19 +53,30 @@ public class Test_es_index_nhscapability {
 	@Then("Response validate against the Json schema")
 	public void response_validate_against_the_json_schema() {
 		
+		boolean isSchemaValidated = true;
+		
 		try (InputStream inputStream = getClass().getResourceAsStream("/jsonschema/indices/nhscapability.json")) {
 			  JSONObject rawSchema = new JSONObject(new JSONTokener(inputStream));
 			  Schema schema = SchemaLoader.load(rawSchema);
 			  schema.validate(new JSONObject(response01)); // throws a ValidationException if this object is invalid
 			} catch (IOException e) {
 				System.out.println("Error - " + e.getMessage());	
+				isSchemaValidated = false;
 			}
 			catch (ValidationException vex) {
 				System.out.println("Error - " + vex.getMessage());	
+				isSchemaValidated = false;
 			}
 			catch (Exception ex) {
 			System.out.println("Error - " + ex.getMessage());	
+			isSchemaValidated = false;
 		}
+		finally {
+			
+			assertEquals(true, isSchemaValidated);
+		
+		}
+		
 
 			
 	}
