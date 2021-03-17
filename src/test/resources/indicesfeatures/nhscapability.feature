@@ -1,5 +1,5 @@
 #Author: rupesh.rathour1@nhs.net
-@SmokeTest
+@EsIndicesTest
 Feature: To Test GET API call to the endpoint https://vpc-bir-analysis-tkpwxtby3yxh7ks7y6gztvik74.eu-west-2.es.amazonaws.com/nhscapability/_search
   Description: The purpose of these tests are to cover happy flow for GET API.
 

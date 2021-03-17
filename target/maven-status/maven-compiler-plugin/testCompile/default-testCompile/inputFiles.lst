@@ -2,6 +2,7 @@ D:\Users\rupesh10934\eclipse-workspace\BRITestingFramework\src\test\java\runners
 D:\Users\rupesh10934\eclipse-workspace\BRITestingFramework\src\test\java\apiTests\E2E_Tests.java
 D:\Users\rupesh10934\eclipse-workspace\BRITestingFramework\src\test\java\stepDefinitions\Steps_E2E.java
 D:\Users\rupesh10934\eclipse-workspace\BRITestingFramework\src\test\java\helper\Helper.java
+D:\Users\rupesh10934\eclipse-workspace\BRITestingFramework\src\test\java\stepDefinitions\Test_es_index_nhscapability.java
 D:\Users\rupesh10934\eclipse-workspace\BRITestingFramework\src\test\java\helper\CSV.java
 D:\Users\rupesh10934\eclipse-workspace\BRITestingFramework\src\test\java\runners\TestNGCucumberRunner.java
 D:\Users\rupesh10934\eclipse-workspace\BRITestingFramework\src\test\java\stepDefinitions\Steps_stp_data_preprocessor.java

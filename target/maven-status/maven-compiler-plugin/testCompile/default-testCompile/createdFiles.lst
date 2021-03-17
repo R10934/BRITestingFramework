@@ -1,5 +1,8 @@
 helper\CSV.class
 apiTests\E2E_Tests.class
 runners\TestRunner.class
+stepDefinitions\Steps_stp_data_preprocessor.class
 runners\TestNGCucumberRunner.class
 helper\Helper.class
+stepDefinitions\Test_es_index_nhscapability.class
+stepDefinitions\Steps_E2E.class

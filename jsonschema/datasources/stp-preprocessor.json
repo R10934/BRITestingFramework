@@ -1,0 +1,206 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+        "entityList": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "entityId": {
+                        "type": "string"
+                    },
+                    "entityType": {
+                        "type": "string"
+                    },
+                    "primaryTaxonomy": {
+                        "type": "string"
+                    },
+                    "secondaryTaxonomy": {
+                        "type": "null"
+                    },
+                    "userRole": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "required": [
+                    "entityId",
+                    "entityType",
+                    "primaryTaxonomy",
+                    "secondaryTaxonomy",
+                    "userRole"
+                ]
+            }
+        },
+        "singleOrgList": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "entityId": {
+                        "type": "string"
+                    },
+                    "odsCode": {
+                        "type": "string"
+                    },
+                    "lastUpdated": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "orgType": {
+                        "type": "string"
+                    },
+                    "peer": {
+                        "type": "null"
+                    },
+                    "region": {
+                        "type": "string"
+                    },
+                    "stp": {
+                        "type": "string"
+                    },
+                    "size": {
+                        "type": "null"
+                    },
+                    "budgetTotal": {
+                        "type": "null"
+                    },
+                    "budgetIT": {
+                        "type": "null"
+                    },
+                    "budgetCyber": {
+                        "type": "null"
+                    },
+                    "datasource": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "source": {
+                                    "type": "string"
+                                },
+                                "type": {
+                                    "type": "string"
+                                },
+                                "sourceData": {
+                                    "type": [
+                                        "null",
+                                        "string"
+                                    ]
+                                },
+                                "lastUpdated": {
+                                    "type": "string"
+                                },
+                                "publishedDate": {
+                                    "type": [
+                                        "null",
+                                        "string"
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "lastUpdated",
+                                "publishedDate",
+                                "source",
+                                "sourceData",
+                                "type"
+                            ]
+                        }
+                    },
+                    "userRole": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "required": [
+                    "budgetCyber",
+                    "budgetIT",
+                    "budgetTotal",
+                    "datasource",
+                    "entityId",
+                    "lastUpdated",
+                    "name",
+                    "odsCode",
+                    "orgType",
+                    "peer",
+                    "region",
+                    "size",
+                    "stp",
+                    "userRole"
+                ]
+            }
+        },
+        "groupOrgList": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "entityId": {
+                        "type": "string"
+                    },
+                    "lastUpdated": {
+                        "type": "string"
+                    },
+                    "groupType": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "null"
+                    },
+                    "odsCode": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "size": {
+                        "type": "null"
+                    },
+                    "budgetTotal": {
+                        "type": "number"
+                    },
+                    "budgetIT": {
+                        "type": "number"
+                    },
+                    "budgetCyber": {
+                        "type": "number"
+                    },
+                    "userRole": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "required": [
+                    "budgetCyber",
+                    "budgetIT",
+                    "budgetTotal",
+                    "description",
+                    "entityId",
+                    "groupType",
+                    "lastUpdated",
+                    "name",
+                    "odsCode",
+                    "size",
+                    "userRole"
+                ]
+            }
+        }
+    },
+    "required": [
+        "entityList",
+        "groupOrgList",
+        "singleOrgList"
+    ]
+}

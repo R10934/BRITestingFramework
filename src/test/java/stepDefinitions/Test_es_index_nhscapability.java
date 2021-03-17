@@ -1,6 +1,7 @@
 package stepDefinitions;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -73,7 +74,7 @@ public class Test_es_index_nhscapability {
 		}
 		finally {
 			
-			assertEquals(true, isSchemaValidated);
+			assertTrue(isSchemaValidated);
 		
 		}
 		

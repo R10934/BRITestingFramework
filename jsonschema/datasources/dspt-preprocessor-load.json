@@ -1,0 +1,96 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "id": {
+                "type": "string"
+            },
+            "type": {
+                "type": "null"
+            },
+            "source": {
+                "type": "string"
+            },
+            "timestamp": {
+                "type": "string"
+            },
+            "sourceDate": {
+                "type": "string"
+            },
+            "confidence": {
+                "type": "integer"
+            },
+            "ods": {
+                "type": "string"
+            },
+            "assets": {
+                "type": "null"
+            },
+            "vulnerabilities": {
+                "type": "null"
+            },
+            "capabilities": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "elementId": {
+                            "type": "string"
+                        },
+                        "type": {
+                            "type": "string"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "cePlusStrength": {
+                            "type": "string"
+                        },
+                        "dsptResponse": {
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        "dsptStrength": {
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "cePlusStrength",
+                        "dsptResponse",
+                        "dsptStrength",
+                        "elementId",
+                        "name",
+                        "type"
+                    ]
+                }
+            },
+            "relationships": {
+                "type": "null"
+            },
+            "user": {
+                "type": "null"
+            }
+        },
+        "required": [
+            "assets",
+            "capabilities",
+            "confidence",
+            "id",
+            "ods",
+            "relationships",
+            "source",
+            "sourceDate",
+            "timestamp",
+            "type",
+            "user",
+            "vulnerabilities"
+        ]
+    }
+}
